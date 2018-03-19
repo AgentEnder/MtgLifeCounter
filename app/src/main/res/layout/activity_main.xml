@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.example.craig.mtglifecounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player One"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/p1Increment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="p1IncrementLife"
+                android:padding="16dp"
+                android:text="+1 Life" />
+
+            <TextView
+                android:id="@+id/p1Life"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textColor="@android:color/white"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/p1Poison"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/p1Decrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="p1DecrementLife"
+                android:padding="16dp"
+                android:text="-1 Life" />
+
+            <Button
+                android:id="@+id/p1PoisionIncrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="p1IncrementPoison"
+                android:padding="16dp"
+                android:text="+1 Poison" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player Two"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/p2Increment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="p2IncrementLife"
+                android:padding="16dp"
+                android:text="+1 Life" />
+
+            <TextView
+                android:id="@+id/p2Life"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textColor="@android:color/white"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/p2Poison"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/p2Decrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="p2DecrementLife"
+                android:padding="16dp"
+                android:text="-1 Life" />
+
+            <Button
+                android:id="@+id/p2PoisionIncrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="p2IncrementPoison"
+                android:padding="16dp"
+                android:text="+1 Poison" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="Reset totals"
+        android:textAlignment="center"
+        android:onClick="reset"/>
+
+</LinearLayout>

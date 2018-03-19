@@ -25,7 +25,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Player One"
+                android:text="@string/p1Label"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -35,8 +35,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="p1IncrementLife"
-                android:padding="16dp"
-                android:text="+1 Life" />
+                android:padding="@dimen/btn_padding"
+                android:text="@string/incrementLife" />
 
             <TextView
                 android:id="@+id/p1Life"
@@ -59,8 +59,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="p1DecrementLife"
-                android:padding="16dp"
-                android:text="-1 Life" />
+                android:padding="@dimen/btn_padding"
+                android:text="@string/decrementLife" />
 
             <Button
                 android:id="@+id/p1PoisionIncrement"
@@ -68,8 +68,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:onClick="p1IncrementPoison"
-                android:padding="16dp"
-                android:text="+1 Poison" />
+                android:padding="@dimen/btn_padding"
+                android:text="@string/poisonIncrement" />
         </LinearLayout>
 
         <LinearLayout
@@ -82,7 +82,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Player Two"
+                android:text="@string/p2Label"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -92,8 +92,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="p2IncrementLife"
-                android:padding="16dp"
-                android:text="+1 Life" />
+                android:padding="@dimen/btn_padding"
+                android:text="@string/incrementLife" />
 
             <TextView
                 android:id="@+id/p2Life"
@@ -116,17 +116,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="p2DecrementLife"
-                android:padding="16dp"
-                android:text="-1 Life" />
+                android:padding="@dimen/btn_padding"
+                android:text="@string/decrementLife" />
 
             <Button
-                android:id="@+id/p2PoisionIncrement"
+                android:id="@+id/p2PoisonIncrement"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:onClick="p2IncrementPoison"
-                android:padding="16dp"
-                android:text="+1 Poison" />
+                android:padding="@dimen/btn_padding"
+                android:text="@string/poisonIncrement" />
         </LinearLayout>
 
 
@@ -136,7 +136,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:text="Reset totals"
+        android:text="@string/reset_totals"
         android:textAlignment="center"
         android:onClick="reset"/>
 
